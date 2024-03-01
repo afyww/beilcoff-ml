@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+scikit-learn = "*"
+flask-mysql = "*"
+notebook = "*"
+pandas = "*"
+numpy = "*"
+flask-restful = "*"
+flask-cors = "*"
+seaborn = "*"
+matplotlib = "*"
+pyarrow = "*"
+mlxtend = "*"
+openpyxl = "*"
+tkintertable = "*"
+statsmodels = "*"
+werkzeug = "==2.0.2"  # Specify the version of werkzeug
+flask-uploads = "==0.2.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"

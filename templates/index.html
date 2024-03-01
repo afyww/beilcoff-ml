@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association Rule Analysis</title>
+</head>
+<body>
+    <h1>Association Rule Analysis</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".xlsx">
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if rules_html %}
+        <h2>Association Rules:</h2>
+        {{ rules_html | safe }}
+
+        <h2>Heatmap:</h2>
+        <img src="data:image/png;base64,{{ img_base64 }}" alt="Heatmap">
+    {% endif %}
+</body>
+</html>
